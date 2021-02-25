@@ -5,6 +5,11 @@
 */
 fun media(vararg notas: Int){
     if(notas.isNotEmpty()){
+        var soma = 0f
+        for(nota in notas){
+            soma += nota
+        }
+        println("a média é: ${soma/notas.size}")
 
     }
 
